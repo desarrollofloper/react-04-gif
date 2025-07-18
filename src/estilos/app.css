@@ -1,0 +1,22 @@
+/* .app {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  grid-template-areas:
+    'navbar header'
+    'navbar main'
+  ;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr;
+}
+.app > .navbar {
+  grid-area: navbar;
+}
+.app > .header {
+  grid-area: header;
+}
+.app > .main {
+  grid-area: main;
+  overflow: auto;
+} */
