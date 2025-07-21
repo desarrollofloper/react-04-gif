@@ -1,0 +1,84 @@
+@theme inline {
+  /* Tema Floper */
+  --breakpoint-xs: 30rem;
+  --breakpoint-3xl: 120rem;
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+}
+
+:root {
+  /* Tema Floper */
+  --danger: var(--color-red-500);
+  --warning: var(--color-yellow-500);
+  --success: var(--color-lime-500);
+}
+
+.dark {
+}
+
+@layer utilities {
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    transition: background-color 0.3s;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.4);
+    border-radius: 9999px;
+  }
+  .dark *::-webkit-scrollbar-thumb {
+    background-color: rgba(160, 160, 160, 0.3);
+  }
+  *:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.6);
+  }
+  .dark *:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(160, 160, 160, 0.5);
+  }
+  /* Firefox fallback */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(100, 100, 100, 0.4) transparent;
+  }
+  .dark * {
+    scrollbar-color: rgba(160, 160, 160, 0.3) transparent;
+  }
+}
+
+@layer components {
+  .text-opacity-0 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_100%)];
+  }
+  .text-opacity-10 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_90%)];
+  }
+  .text-opacity-20 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_80%)];
+  }
+  .text-opacity-30 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_70%)];
+  }
+  .text-opacity-40 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_60%)];
+  }
+  .text-opacity-50 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_50%)];
+  }
+  .text-opacity-60 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_40%)];
+  }
+  .text-opacity-70 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_30%)];
+  }
+  .text-opacity-80 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_20%)];
+  }
+  .text-opacity-90 {
+    @apply text-[color-mix(in_srgb,currentColor,transparent_10%)];
+  }
+}

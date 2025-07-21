@@ -10,7 +10,7 @@ import { Toaster } from '@shadcn/sonner';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Toaster richColors closeButton />
-    <App>
+    <App className="scrollbar-modern">
       <GifApp />
     </App>
   </StrictMode>,
